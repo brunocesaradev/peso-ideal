@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXEMPLO 2 CAP 04</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 400px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #0056b3;
+        }
+
+        h3 {
+            margin-top: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="text-align: center;">Calculo de Peso Ideal</h2>
+
+    <form>
+        <p>Seu nome:
+            <input type="text" required id="inNome" maxlength="130">
+        </p>
+        <p>Sexo:
+            <input type="radio" name="sexo" id="inMasculino" required> Masculino
+            <input type="radio" name="sexo" id="inFeminino" required> Feminino
+        </p>
+        <p>Sua Altura:
+            <input type="number" required min="0" step="0.01" id="inAltura">
+        </p>
+        <input type="submit" value="Mostra status">
+        <input type="reset" value="Apagar valores">
+    </form>
+    <h3></h3>
+    <script src="index/js/ex4_2.js"></script>
+</body>
+
+</html>
